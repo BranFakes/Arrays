@@ -41,10 +41,39 @@ namespace Arrays
             }
 
 
+       
 
+
+
+
+            Console.WriteLine();
+            
+
+            int lives = 3; //example of int
 
             Console.WriteLine("Arrays:");
 
+            int[] ammo; // declaration (telling the compiler what "ammo" is)
+            //"int[]" means "array of integers'
+            // so, "ammo" is an "array of integers"
+
+            ammo = new int[3]; //initialization (telling the compiler the size)
+            ammo[0] = 6; //pistol
+            ammo[1] = 2; //shotgun
+            ammo[2] = 20; //bfg
+
+            string[] weaponName = new string[3]; // declaration + init. combined
+            weaponName[0] = "pistol";
+            weaponName[1] = "shotgun";
+            weaponName[2] = "bfg";
+
+
+            Console.WriteLine("ammo: " + ammo[Weapon]);
+            // HOW DO WE SHOW THE AMMO OF THE CURRENT WEAPON?
+
+            Console.WriteLine("pistol Ammo: " + ammo[0]);
+            Console.WriteLine("shotgun Ammo: " + ammo[1]);
+            Console.WriteLine("bfg Ammo: " + ammo[2]);
 
 
 
